@@ -16,7 +16,12 @@ body {
     color: #fdfdfd;
     margin: 0;
     padding: 0;
+    cursor: none;
 /*  #6969A9 , #B6B6DF, #000000, #010103*/ 
+}
+
+a {
+    cursor: none;
 }
 
 header {
@@ -27,8 +32,6 @@ header {
 .personal-info {
     display: flex;
     flex-direction: column;
-    
-
 }
 
 .personal-info-top {
@@ -246,4 +249,33 @@ main {
     width: 23%;
     height: 23%;
     
+}
+/* code for the custom cursor */ 
+.cursor {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    
+}
+
+.outer {
+    border: 1px dashed #B6B6DF;
+}
+
+.inner {
+    background: #6969A9;
+    transition: 250ms ease-out;
+}
+
+.cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    transition: transform 250ms ease-in-out;
+}
+
+.inner.hover {
+    background: #B6B6DF;
+    mix-blend-mode: difference;
 }
