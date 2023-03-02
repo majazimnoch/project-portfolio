@@ -1,0 +1,128 @@
+* {
+font-family: 'Manrope', sans-serif;
+background-color: #16161d;
+color: #fdfdfd;
+/*  #6969A9 , #B6B6DF, #000000, #010103*/ 
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+
+}
+
+.personal-info-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.personal-info-top-photobox {
+    display: flex;
+    justify-content: center;
+
+
+}
+.authorsphoto {
+    width: 150px;
+    border-radius: 50%;  
+    object-fit: cover;  
+}
+
+.paragraph {
+    font-family: 'EB Garamond', serif !important;
+    padding-bottom: 15px;
+}
+
+.personal-info-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons-contact-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-linkedin {
+    background: url("./assets/linkedin.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-linkedin:hover {
+    background: url("./assets/linkedinh.png") no-repeat;
+}
+
+.icons-git {
+    background: url("./assets/github.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-git:hover {
+    background: url("./assets/githubh.png") no-repeat;
+}
+
+.icons-stack {
+    background: url("./assets/stack.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-stack:hover {
+    background: url("./assets/stackh.png") no-repeat;
+}
+
+.icons-twitter {
+    background: url("./assets/twitter.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-twitter:hover {
+    background: url("./assets/twitterh.png") no-repeat;
+}
+
+.icons-insta {
+    background: url("./assets/insta.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-insta:hover {
+    background: url("./assets/instah.png") no-repeat;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.arrow-icon {
+    width: 9%;
+    padding-top: 40px;
+}
+
+.jobtitle {
+    color: #ffffff;
+    /* #808080; */
+}
+
+.jobtitle:hover {
+    color: #B6B6DF;
+}
