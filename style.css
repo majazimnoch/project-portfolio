@@ -16,8 +16,16 @@ body {
     color: #fdfdfd;
     margin: 0;
     padding: 0;
-    cursor: none;
+    /* cursor: none; */
 /*  #6969A9 , #B6B6DF, #000000, #010103*/ 
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 a {
@@ -45,6 +53,11 @@ header {
     display: flex;
     justify-content: center;
 
+}
+
+.personal-info-top-photobox2 {
+    display: flex;
+    justify-content: left;
 
 }
 .authorsphoto {
@@ -55,8 +68,9 @@ header {
 
 .paragraph {
     font-family: EBGaramond !important;
+    font-size: 20px;
     padding-bottom: 15px;
-    line-height: 24px;
+    line-height: 30px;
 }
 
 .personal-info-bottom {
@@ -82,12 +96,36 @@ header {
     background: url("./assets/linkedinh.png") no-repeat;
 }
 
+.icons-linkedin-black {
+    background: url("./assets/linkedinb.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-linkedin-black:hover {
+    background: url("./assets/linkedinh.png") no-repeat;
+}
+
 .icons-git {
     background: url("./assets/github.png") no-repeat;
     display: flex;
     padding: 20px;
     padding-top: 20px;
     height: 90%; 
+}
+
+.icons-git-black {
+    background: url("./assets/githubb.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-git-black:hover {
+    background: url(./assets/githubh.png) no-repeat;
 }
 
 .icons-git:hover {
@@ -106,8 +144,32 @@ header {
     background: url("./assets/stackh.png") no-repeat;
 }
 
+.icons-stack-black {
+    background: url("./assets/stackb.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-stack-black:hover {
+    background: url("./assets/stackh.png") no-repeat;
+}
+
 .icons-twitter {
     background: url("./assets/twitter.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-twitter-black:hover {
+    background: url("./assets/twitterh.png") no-repeat;
+}
+
+.icons-twitter-black {
+    background: url("./assets/twitterb.png") no-repeat;
     display: flex;
     padding: 20px;
     padding-top: 20px;
@@ -127,6 +189,18 @@ header {
 }
 
 .icons-insta:hover {
+    background: url("./assets/instah.png") no-repeat;
+}
+
+.icons-insta-black {
+    background: url("./assets/instab.png") no-repeat;
+    display: flex;
+    padding: 20px;
+    padding-top: 20px;
+    height: 90%; 
+}
+
+.icons-insta-black:hover {
     background: url("./assets/instah.png") no-repeat;
 }
 
@@ -164,12 +238,14 @@ main {
 .tech-section {
     background-color: #F8F8FF!important;
     color: #16161d;
+    display: flex;
+    flex-direction: column;
     padding-bottom: 50px;
     padding-top: 40px;
     
 }
 
-.tech-section-content {
+.section-content {
     padding: 0 24px;
 
 }
@@ -199,58 +275,173 @@ main {
 
 }
 
+.colouredword4 {
+    background-color: #2B2BA2;
+    color: #F8F8FF;
+    padding: 0 5px;
+    font-weight: 400;
+
+}
+
+.colouredword5 {
+    background-color: #16161d;
+    color: #F8F8FF;
+    padding: 0 5px;
+    font-weight: 400;
+
+}
+
 .headline-section {
     font-size: 3rem;
     color: #010103;
     text-align: center;
 }
 
-.projects-section {
-    padding-bottom: 50px;
-    padding-top: 40px;
-}
-
-.projects-section-content {
-    padding: 0px 24px;
-
-}
-
 .headline-section2 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #B6B6DF;
 }
 
-.project1 {
-    justify-content: flex-start;
+.colortext2 {
+    color: #2B2BA2;
+}
+
+.colortext3 {
+    color: #16161d;
+} 
+
+
+.projects-section {
     padding-bottom: 50px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-project {
+    justify-content: flex-start;
+    padding-bottom: 40px;
 }
 
 .btn {
     border-radius: 49px;
-    background-color: #F8F8FF;
+    background-color: #B6B6DF;
     display: flex;
     flex-direction: row;
     gap: 12px;
     align-items: center;
     padding: 0 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     border: none;
     font-family: Manrope;
     font-weight: medium;
-    
+    font-size: 1rem;
+
 }
 
-.btn-text {
-   
+.second {
+    background-color: #fdfdfd;
 }
 
-.image-globe {
-    width: 23%;
-    height: 23%;
-    
+.third {
+    background-color: #6969A9;
+    color: #fdfdfd;
 }
-/* code for the custom cursor */ 
+
+.btn:hover {
+    background-color: #2B2BA2;
+    color: #fdfdfd;
+}
+
+.mywords-section {
+    background-color: #F8F8FF;
+    color: #16161d;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.skills-section {
+    background-color: #B6B6DF;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.newlist {
+    padding-bottom: 40px;
+}
+
+li:hover {
+    color: #6969A9;
+}
+
+.contact-section {
+    background-color: #F8F8FF;
+    color: #16161d;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.titletext {
+    color: #2B2BA2;
+    font-size: 25px;
+}
+
+.jobtitle {
+    font-size: 25px;
+    line-height: 15px;
+}
+
+.titletext {
+    color: #16161D;
+    line-height: 15px;
+}
+
+.titletext1 {
+    font-size: 20px;
+    color: #828297;
+    line-height: 15px;
+}
+
+.contacttext {
+    font-size: 25px;
+    color: #16161D;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+.personal-info-top-titles2 {
+    padding-bottom: 60px;
+
+}
+
+a {
+    color: #6969A9;
+}
+
+
+/* code for the custom cursor 
 .cursor {
     position: absolute;
     height: 25px;
@@ -278,4 +469,4 @@ main {
 .inner.hover {
     background: #B6B6DF;
     mix-blend-mode: difference;
-}
+} */ 
