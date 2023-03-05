@@ -33,4 +33,4 @@ window.addEventListener("mousemove", (e) => {
         });
     });
     const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observer.observe(el));
+    hiddenElements.forEach((el) => observer.observe(el)); 
