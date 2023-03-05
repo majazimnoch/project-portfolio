@@ -16,7 +16,7 @@ body {
     color: #fdfdfd;
     margin: 0;
     padding: 0;
-    /* cursor: none; */
+    cursor: none;
 /*  #6969A9 , #B6B6DF, #000000, #010103*/ 
 }
 
@@ -256,10 +256,6 @@ main {
 
 }
 
-.new-project-image {
-    
-}
-
 .colouredword1 {
     background-color: #4A4ADA;
     font-family: EBGaramond !important;
@@ -476,7 +472,7 @@ a {
 }
 
 
-/* code for the custom cursor 
+/* code for the custom cursor */ 
 .cursor {
     position: absolute;
     height: 25px;
@@ -488,7 +484,7 @@ a {
 }
 
 .outer {
-    border: 1px dashed #B6B6DF;
+    border: 1px dashed #3a3a89;
 }
 
 .inner {
@@ -498,13 +494,13 @@ a {
 
 .cursor.hover {
     transform: translate(-50%, -50%) scale(4);
-    transition: transform 250ms ease-in-out;
+    transition: transform 200ms ease-in-out;
 }
 
 .inner.hover {
     background: #B6B6DF;
     mix-blend-mode: difference;
-} */ 
+} 
 
 .arrow-tablet {
     display: none;
@@ -519,6 +515,21 @@ a {
     padding-bottom: 50px;
 }
 
+.test1 {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+}
+
+
+
 @media (min-width:668px) and (max-width:1023px) {
 
     .preheader {
@@ -527,7 +538,7 @@ a {
     }
     .head {
         background-color: #16161D;
-        background-image: url(./assets/logo.jpg);
+        background-image: url(./assets/logo1.jpg);
         background-size: 100%;
         padding-top: 300px;
         padding-bottom: 350px;
@@ -650,8 +661,19 @@ a {
 
     .personal-info-bottom{
         align-items: center;
+        color: #F8F8FF!;
+        padding: 0 80px;
 
     }
+
+    .personal-info-bottom2{
+        align-items: center;
+        color: #F8F8FF!;
+        text-align: center;
+        padding: 0 90px;
+
+    }
+    
 
     .contact-section {
         display: none;
@@ -660,11 +682,8 @@ a {
     .personal-info-tablet {
         display: flex;
         flex-direction: column;
-    }
-
-    .personal-info-bottom {
-        color: #F8F8FF!;
-
+        background-color: #F8F8FF;
+        color: #16161D;
     }
 
     h4 {
@@ -681,5 +700,116 @@ a {
         gap: 40px;
     }
 
+    .icons-linkedin-bottom
+    {
+        background: url(./assets/linkedinb.png) no-repeat;
+    }
+
+    .test1 {
+        display: none;
+    }
+
 }
 
+@media (min-width:1024px) {
+
+
+    .personal-info {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        gap: 20px;       
+    }
+
+    .wrapper-personal-info {
+        width: 50%;
+        margin-top: 20%;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .personal-info-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 40px;
+        
+    }
+
+    .test1 {
+        display: flex;
+        flex-direction: column;
+        background-color: #16161D;
+        width: 50%;
+        height: 100%;
+        
+    }
+   
+    .test1-picture {
+        object-fit: cover;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        max-height: 400px;
+    }
+
+    .authorsphoto {
+        object-fit: cover;
+    }
+
+    .wrapper-test2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .test2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    .split {
+        width: 50%;
+        height: 100%;
+
+    }
+    .projects-section {
+        padding: 0 190px;
+    }
+    .new-project {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 1fr 2fr;
+        grid-row: span 3;
+        gap: 20px;
+    
+       }
+    
+       .new-project-image {
+        grid-row: span 5;
+        padding-top: 30px;
+        height: 400px;
+        max-width: auto;
+        object-fit: cover;
+       }
+    
+       .btn {
+        grid-column: span 1;
+       }
+    
+       .buttons-new-project {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+       }
+    
+
+   
+      
+}
