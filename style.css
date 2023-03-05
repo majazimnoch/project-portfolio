@@ -510,6 +510,14 @@ a {
     display: none;
 }
 
+.personal-info-tablet {
+    display: none;
+}
+
+.contact-section {
+    padding: 24px 24px;
+    padding-bottom: 50px;
+}
 
 @media (min-width:668px) and (max-width:1023px) {
 
@@ -551,7 +559,7 @@ a {
 
    }
 
-   .personal-info {
+   .personal-info-tablet {
     padding: 0 80px;
    }
 
@@ -647,6 +655,11 @@ a {
 
     .contact-section {
         display: none;
+    }
+
+    .personal-info-tablet {
+        display: flex;
+        flex-direction: column;
     }
 
     .personal-info-bottom {
