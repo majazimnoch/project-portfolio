@@ -24,14 +24,15 @@
 </head>
 <body>
     <img class="tablet-image" src="" alt="">
-    <section class="hero">
+    <section class="hero hidden">
         <div class="top-hero">
             <div class="hero-image-container">
                 <img class="author-image" src="./assets/author_photo3.jpg" alt="Maja Zimnoch, the frontend developer, smiling">
             </div>
             <div class="text-titles">
-                <h4 class="author-name">Maja Zimnoch</h4>
-                <h5 class="author-title">Frontend Developer</h5>
+                <h5 class="author-name">Maja Zimnoch</h5>
+                <h4 class="author-title">Frontend Developer</h4>
+                <h6 class="second-title">+ digital designer</h6>
             </div>
         </div>
         <div class="bottom-hero">
@@ -71,15 +72,16 @@
                 </div>
         </div>
     </section>
-    <section class="hero-desktop">
+    <section class="hero-desktop hidden">
         <div class="info-desktop">
             <div class="top-info">
                 <div class="hero-image-container">
                     <img class="author-image" src="./assets/author_photo3.jpg" alt="Maja Zimnoch, the frontend developer, smiling">
                 </div>
                 <div class="text-titles">
-                    <h4 class="author-name">Maja Zimnoch</h4>
-                    <h5 class="author-title">Frontend Developer</h5>
+                    <h5 class="author-name">Maja Zimnoch</h5>
+                    <h4 class="author-title">Frontend Developer</h4>
+                    <h6 class="second-title">+ digital designer</h6>
                 </div>
             </div>
             <div class="bottom-info">
@@ -128,42 +130,77 @@
             src="./assets/arrow.png">
         <h5 class="extratext">Let's scroll</h5>
     </section>
-    <section class="tech">
-        <h1 class="headline-main">Tech</h1>
-        <p class="paragraph-tech">
-        HTML5, CSS, Flexbox, <span class="colouredword1">JavaScript,</span> API:s, <span class="colouredword2">React,</span> Node.js, Web Accessibility, <span class="colouredword1">mob-programming,</span> pair-programming, Github, UX, UI.</p>
-    </section>
-    <section class="projects">
-        <h1 class="headline-main">Tech</h1>
-        <div class="image-project-box">
-            <img
-                class="image-project"
-                alt=""
-                src="https://placehold.co/600x400">
+    <section class="tech hidden">
+        <h1 class="headline-main hblack">Tech</h1>
+        <div class="tech-container">
+            <p class="paragraph-tech">
+                HTML5, CSS, Flexbox, <span class="colouredword purple">JavaScript,</span> API:s, <span class="colouredword black">React,</span> Redux, Node.js, Web Accessibility, <span class="colouredword lightpurple">mob-programming,</span> pair-programming, Github, UX, UI.</p>
         </div>
-        <div class="project-detail">
-            <h2>Project name</h2>
-            <p class="paragraph-projects">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uter enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tools-box">
-                <p class="paragraph-tools-box">
-                    <span class="background-word"> HTML5</span> <span class="background-word"> CSS3</span> <span class="background-word"> JavaScript</span> 
-                </p>
+    </section>
+    <section class="projects hidden">
+        <!-- project start -->
+        <h1 class="headline-main hwhite">Featured projects</h1>
+        <div class="project-container">
+            <div class="single-project">
+                <div class="image-project-box">
+                    <img
+                    class="image-project"
+                    alt=""
+                    src="./assets/guesswho.jpg">
+                </div>
+                <div class="project-detail">
+                    <h2 class="headline-single-project">Name</h2>
+                    <p class="paragraph-projects">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uter enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="tools-box">
+                        <p class="paragraph-tools-box">
+                            <span class="background-word"> HTML5</span> <span class="background-word"> CSS3</span> <span class="background-word"> JavaScript</span> 
+                        </p>
+                    </div>
+                    <div class="buttons-projects">
+                         <form action="https://github.com/majazimnoch/project-weather-app" method="get" target="_blank"> 
+                        <button class="btn" type="submit">
+                        <img src="./assets/githubb.png" class="image-button"><p class="btn-text" alt="github icon">View the code</p></button> </form> 
+    
+                        <form action="https://kaleidoscopic-tarsier-64d42d.netlify.app/" method="get" target="_blank"> 
+                        <button class="btn second-color-button" type="submit"><img src="./assets/globeb.png" class="image-button" alt="planet icon"><p class="btn-text">Live demo</p></button> </form>
+                    </div>
+                </div>
             </div>
-            <div class="buttons-projects">
-                     <form action="https://github.com/majazimnoch/project-weather-app" method="get" target="_blank"> 
-                    <button class="btn" type="submit">
-                    <img src="./assets/githubb.png" class="image-button"><p class="btn-text" alt="github icon">View the code</p></button> </form> 
-
-                    <form action="https://kaleidoscopic-tarsier-64d42d.netlify.app/" method="get" target="_blank"> 
-                    <button class="btn second" type="submit"><img src="./assets/globeb.png" class="image-button" alt="planet icon"><p class="btn-text">Live demo</p></button> </form>
+            <!-- project start -->
+            <div class="single-project">
+                <div class="image-project-box">
+                    <img
+                    class="image-project"
+                    alt=""
+                    src="./assets/weatherapp.jpg">
+                </div>
+                <div class="project-detail">
+                    <h2 class="headline-single-project">Featured projects</h2>
+                    <p class="paragraph-projects">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Uter enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="tools-box">
+                        <p class="paragraph-tools-box">
+                            <span class="background-word"> HTML5</span> <span class="background-word"> CSS3</span> <span class="background-word"> JavaScript</span> 
+                        </p>
+                    </div>
+                    <div class="buttons-projects">
+                         <form action="https://github.com/majazimnoch/project-weather-app" method="get" target="_blank"> 
+                        <button class="btn" type="submit">
+                        <img src="./assets/githubb.png" class="image-button"><p class="btn-text" alt="github icon">View the code</p></button> </form> 
+    
+                        <form action="https://kaleidoscopic-tarsier-64d42d.netlify.app/" method="get" target="_blank"> 
+                        <button class="btn second-color-button" type="submit"><img src="./assets/globeb.png" class="image-button" alt="planet icon"><p class="btn-text">Live demo</p></button> </form>
+                    </div>
+                </div>
             </div>
+            <!-- project start -->
         </div>
     </section>
     <section class="mywords"></section>
     <section class="skills"></section>
     <section class="footer"></section>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
