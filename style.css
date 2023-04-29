@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    list-style: none;
 }
 
 :root {
@@ -324,6 +325,7 @@ p {
         flex-direction: column;
         justify-content: center;
         background-color: var(--primaryWhite);
+        padding: 2rem 0;
     }
 
     .mywords-container {
@@ -332,7 +334,7 @@ p {
         align-items: center;
         justify-content: center;
         color: var(--primaryWhite);
-        margin: 0rem 1.5rem;
+        margin: 1rem 1.5rem;
     }
 
     .single-mywords {
@@ -346,8 +348,6 @@ p {
 
     .image-mywords-box {
         display: flex;
-
-
     }
 
     .image-mywords {
@@ -362,6 +362,46 @@ p {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+    }
+
+    /* skills list */
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--purpleLight);
+        padding: 4rem 0;
+    }
+
+   .list-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap:3rem;
+        margin: 4rem 0;
+        font-family: var(--fontHeader);
+        color: var(--primaryWhite);
+   }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+     /* footer */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5rem;
+        gap: 2rem;
+        color: var(--primaryWhite);
     }
 
 @media (min-width:668px) and (max-width:1023px) {
