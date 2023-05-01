@@ -4,7 +4,7 @@
 }
 
 :root {
-    --primaryWhite: #fdfdfd;;
+    --primaryWhite: #fdfdfd;
     --primaryBlack: #16161d;
     --purpleLight: #B6B6DF;
     --purpleDark: #6969A9;
@@ -91,9 +91,11 @@ a:hover {
 }
 
 .headline-mywords {
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 1rem 1.5rem;
+    padding-top: 2.5rem;
 }
+
 .headline-single-project {
     font-size: 2rem;
     color: var(--primaryWhite);
@@ -110,7 +112,7 @@ a:hover {
 
 .date-header {
     color: var(--purpleDark);
-    font-size: 20px;
+    font-size: 18px;
 }
 .hblack {
     color: var(--primaryBlack);
@@ -186,6 +188,10 @@ a:hover {
     transition: .5s ease;
 }
 
+.button-mywords {
+    margin-top: 1.5rem;
+}
+
 /* spans */
 .colouredword {
     color: var(--primaryWhite);
@@ -228,8 +234,10 @@ a:hover {
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 1.5rem;
     gap: 2rem;
+    height: 100vh;
     color: var(--primaryWhite);
 }
 
@@ -242,6 +250,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem 0 2rem 0;
 }
 
 .author-image {
@@ -284,7 +293,7 @@ a:hover {
 
 .tech {
     display: flex;
-    height: 50vh;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -407,7 +416,7 @@ a:hover {
     .mywords-detail {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     /* skills list */
@@ -418,7 +427,7 @@ a:hover {
         justify-content: center;
         text-align: center;
         background-color: var(--purpleLight);
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
 
    .list-container {
@@ -494,6 +503,8 @@ a:hover {
     .tablet-image {
         display: block;
         width: 100vw;
+        height: 450px;
+        background-size: cover;
     }
 
     .hero-desktop {
@@ -575,7 +586,7 @@ a:hover {
        /* skills list */
 
        .skills {
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
 
         .list-container {
@@ -596,6 +607,7 @@ a:hover {
          /* footer */
 
     .footer {
+        padding: 3rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -685,7 +697,7 @@ a:hover {
         gap: 4rem;
     }
     .desktop-image {
-        background: url(./assets/forest.jpg);
+        background: url(./assets/gradient2.png);
         background-position: center;
         width:100%;
         height:100vh;
@@ -749,7 +761,6 @@ a:hover {
     /* my words */ 
 
     .mywords {
-        margin: 2rem 0;
         align-items: flex-start;
         justify-content: space-between;
     }
@@ -757,23 +768,20 @@ a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
-        margin:0 6rem;
+        margin: 0 6rem 3rem 6rem;
         align-items: flex-start;
     }
 
     .mywords-detail {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
     }
     
     .single-mywords {
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
+        align-content: stretch;
         color: var(--primaryWhite);
         margin: 0rem 0rem 2rem 0rem;
-        border: solid 1px red;
     }
 
     .image-mywords-box {
@@ -781,7 +789,6 @@ a:hover {
     }
 
     .image-mywords {
-    
         display: block;
         width: 44vw;
         max-width:100%;
@@ -795,7 +802,8 @@ a:hover {
      /* skills list */
 
      .skills {
-        padding: 4rem 0;
+        padding: 2rem 0;
+        height: 100vh;
     }
 
         .list-container {
@@ -812,7 +820,6 @@ a:hover {
         li {
             margin-bottom: .5rem;
         }
-
 
          /* footer */
 
