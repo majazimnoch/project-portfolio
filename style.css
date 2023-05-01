@@ -139,6 +139,11 @@ a:hover {
     font-size:20px;
 }
 
+.paragraph-list {
+    margin-bottom: 2rem;
+    font-family: var(--fontHeader);
+}
+
 /* icons */
 
 .icons-hover {
@@ -172,6 +177,8 @@ a:hover {
     background-color: var(--purpleLight);
     color: var(--primaryBlack);
     transition: .5s ease;
+    font-family: var(--fontHeader);
+    font-size: var(--fontSize);
 }
 
 .btn-text {
@@ -370,8 +377,9 @@ a:hover {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        font-family: var(--fontHeader);
+        font-size: var(--fontSize);
     }
-
 
 /* mywords */
 
