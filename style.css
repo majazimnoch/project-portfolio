@@ -325,6 +325,7 @@ a:hover {
         justify-content: center;
         color: var(--primaryWhite);
         margin: 4rem 1.5rem;
+    
     }
     .project-container  {
         display: flex;
@@ -333,6 +334,7 @@ a:hover {
         justify-content: center;
         color: var(--primaryWhite);
         margin: 2rem 0;
+       
     }
 
     .single-project {
@@ -341,8 +343,11 @@ a:hover {
         align-items: center;
         justify-content: center;
         color: var(--primaryWhite);
-        margin: 0rem 1.5rem;
+        margin: 3rem 1.5rem;
+        min-height: 500px;
     }
+
+  
 
     .image-project-box {
         display: flex;
@@ -353,7 +358,6 @@ a:hover {
         max-height: 350px;
         width: 88vw;
         margin: 2rem 0;
-        object-fit:cover;
     }
 
     .project-detail {
@@ -572,7 +576,7 @@ a:hover {
         align-content: space-between;
         color: var(--primaryWhite);
         margin: 1.5rem;
-        height: 450px;
+        min-height: 500px;
     }
 
     .image-project-box {
@@ -752,10 +756,10 @@ a:hover {
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        align-content: space-between;
+        align-content: flex-start;
         color: var(--primaryWhite);
         margin: 2rem 0;
-        height: 400px;
+        
     }
 
     .project-detail {
