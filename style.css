@@ -179,6 +179,7 @@ a:hover {
     transition: .5s ease;
     font-family: var(--fontHeader);
     font-size: var(--fontSize);
+    cursor: pointer;
 }
 
 .btn-text {
