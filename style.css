@@ -358,6 +358,8 @@ a:hover {
         max-height: 350px;
         width: 88vw;
         margin: 2rem 0;
+        object-fit: cover; 
+        display: block;
     }
 
     .project-detail {
